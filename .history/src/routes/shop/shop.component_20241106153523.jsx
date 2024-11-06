@@ -1,0 +1,4 @@
+import SHOP
+
+
+const Shop = () => {};
