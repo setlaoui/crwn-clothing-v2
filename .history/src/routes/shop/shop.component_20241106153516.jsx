@@ -1,4 +1,0 @@
-iport 
-
-
-const Shop = () => {};

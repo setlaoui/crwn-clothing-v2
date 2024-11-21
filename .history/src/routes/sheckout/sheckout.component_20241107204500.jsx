@@ -1,2 +1,0 @@
-import './checkout.styles.scss';
-

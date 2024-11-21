@@ -1,13 +1,13 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.util";
 import FormInput from "../form-input/form-input.component.jsx";
 
-import './sign-up-form.styles.scss';
+import { setCurrentUser } from "../../store/user/user.actions.js";
 import Button from "../button/button.component.jsx";
-import { UserContext } from "../../context/user.context.jsx";
+import "./sign-up-form.styles.scss";
 
 const defaultFormFiels = {
   displayName: "",
@@ -20,7 +20,7 @@ const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFiels);
   const { displayName, email, password, confirmPassword } = formFields;
 
-const { setCurrentUser } = useContext(UserContext);
+  // const cartItems = useSelector(selectCartItems);
 
   const resetFormField = () => {
     setFormFields(defaultFormFiels);

@@ -1,4 +1,0 @@
-import 
-
-
-const Shop = () => {};
